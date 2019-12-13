@@ -14,6 +14,7 @@ import torch.nn.init as init
 import torch.utils.data as data
 import numpy as np
 import argparse
+import datetime
 
 
 def str2bool(v):
@@ -39,7 +40,7 @@ parser.add_argument('--num_workers', default=4, type=int,
                     help='Number of workers used in dataloading')
 parser.add_argument('--cuda', default=True, type=str2bool,
                     help='Use CUDA to train model')
-parser.add_argument('--lr', '--learning-rate', default=1e-3, type=float,
+parser.add_argument('--lr', '--learning-rate', default=1e-4, type=float,
                     help='initial learning rate')
 parser.add_argument('--momentum', default=0.9, type=float,
                     help='Momentum value for optim')
@@ -67,7 +68,7 @@ else:
 if not os.path.exists(args.save_folder):
     os.mkdir(args.save_folder)
 
-
+COCO_ROOT=''
 def train():
     if args.dataset == 'COCO':
         if args.dataset_root == VOC_ROOT:
@@ -162,7 +163,12 @@ def train():
             adjust_learning_rate(optimizer, args.gamma, step_index)
 
         # load train data
-        images, targets = next(batch_iterator)
+        try:
+            images, targets = next(batch_iterator)
+        except StopIteration:
+            batch_iterator = iter(data_loader)
+            images, targets = next(batch_iterator)
+
 
         if args.cuda:
             images = Variable(images.cuda())
@@ -180,15 +186,15 @@ def train():
         loss.backward()
         optimizer.step()
         t1 = time.time()
-        loc_loss += loss_l.data[0]
-        conf_loss += loss_c.data[0]
+        loc_loss += loss_l.data
+        conf_loss += loss_c.data
 
         if iteration % 10 == 0:
             print('timer: %.4f sec.' % (t1 - t0))
-            print('iter ' + repr(iteration) + ' || Loss: %.4f ||' % (loss.data[0]), end=' ')
+            print('iter ' + repr(iteration) + ' || Loss: %.4f ||' % (loss.data), end=' ')
 
         if args.visdom:
-            update_vis_plot(iteration, loss_l.data[0], loss_c.data[0],
+            update_vis_plot(iteration, loss_l.data, loss_c.data,
                             iter_plot, epoch_plot, 'append')
 
         if iteration != 0 and iteration % 5000 == 0:
@@ -252,4 +258,7 @@ def update_vis_plot(iteration, loc, conf, window1, window2, update_type,
 
 
 if __name__ == '__main__':
+    start = datetime.datetime.now()
     train()
+    end = datetime.datetime.now()
+    print(end - start)

@@ -36,7 +36,8 @@ def str2bool(v):
 parser = argparse.ArgumentParser(
     description='Single Shot MultiBox Detector Evaluation')
 parser.add_argument('--trained_model',
-                    default='weights/ssd300_mAP_77.43_v2.pth', type=str,
+#                    default='weights/ssd300_mAP_77.43_v2.pth', type=str,
+                    default='weights/ssd300_COCO_45000.pth', type=str,
                     help='Trained state_dict file path to open')
 parser.add_argument('--save_folder', default='eval/', type=str,
                     help='File path to save results')
@@ -66,11 +67,11 @@ if torch.cuda.is_available():
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
 
-annopath = os.path.join(args.voc_root, 'VOC2007', 'Annotations', '%s.xml')
-imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')
-imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',
+annopath = os.path.join(args.voc_root, 'VOC2012', 'Annotations', '%s.xml')
+imgpath = os.path.join(args.voc_root, 'VOC2012', 'JPEGImages', '%s.jpg')
+imgsetpath = os.path.join(args.voc_root, 'VOC2012', 'ImageSets',
                           'Main', '{:s}.txt')
-YEAR = '2007'
+YEAR = '2012'
 devkit_path = args.voc_root + 'VOC' + YEAR
 dataset_mean = (104, 117, 123)
 set_type = 'test'
@@ -108,8 +109,8 @@ def parse_rec(filename):
     for obj in tree.findall('object'):
         obj_struct = {}
         obj_struct['name'] = obj.find('name').text
-        obj_struct['pose'] = obj.find('pose').text
-        obj_struct['truncated'] = int(obj.find('truncated').text)
+#        obj_struct['pose'] = obj.find('pose').text
+#        obj_struct['truncated'] = int(obj.find('truncated').text)
         obj_struct['difficult'] = int(obj.find('difficult').text)
         bbox = obj.find('bndbox')
         obj_struct['bbox'] = [int(bbox.find('xmin').text) - 1,
@@ -426,7 +427,7 @@ if __name__ == '__main__':
     net.eval()
     print('Finished loading model!')
     # load data
-    dataset = VOCDetection(args.voc_root, [('2007', set_type)],
+    dataset = VOCDetection(args.voc_root, [('2012', set_type)],
                            BaseTransform(300, dataset_mean),
                            VOCAnnotationTransform())
     if args.cuda:

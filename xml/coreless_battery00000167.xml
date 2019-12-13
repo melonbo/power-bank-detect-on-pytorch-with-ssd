@@ -1,0 +1,19 @@
+<annotation>
+  <folder>VOC2012</folder>
+  <filename>coreless_battery00000167.jpg</filename>
+  <size>
+    <width>1040</width>
+    <height>1156</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>coreless</name>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>334</xmin>
+      <ymin>540</ymin>
+      <xmax>459</xmax>
+      <ymax>618</ymax>
+    </bndbox>
+  </object>
+</annotation>
