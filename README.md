@@ -1,6 +1,8 @@
+forked from [kuangliu/pytorch-ssd](https://github.com/kuangliu/pytorch-ssd)
+
 ## 1、下载代码
 
-git clone
+git clone https://github.com/melonbo/power-bank-detect-on-pytorch-with-ssd.git
 
 ## 2、运行测试指令
 
@@ -114,4 +116,5 @@ Results:
 --------------------------------------------------------------
 Results computed with the **unofficial** Python eval code.
 Results should be very close to the official MATLAB eval code.
+--------------------------------------------------------------
 ```
