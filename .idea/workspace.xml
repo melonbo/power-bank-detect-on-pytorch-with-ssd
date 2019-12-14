@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="221b1cbc-e301-461a-963d-167eef879c1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/voc0712.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/voc0712.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layers/modules/multibox_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/layers/modules/multibox_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Ut4yyfggTUotIIDVGmIO6coGSZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in eval_test_set.py">
+    <configuration name="toPascalVocXml" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ssd.pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toPascalVocXml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in eval_test_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ssd.pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/eval_test_set.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in eval_test_set.py" />
+        <item itemvalue="Python.toPascalVocXml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="221b1cbc-e301-461a-963d-167eef879c1b" name="Default Changelist" comment="" />
+      <created>1576162815267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576162815267</updated>
+      <workItem from="1576162818696" duration="9260000" />
+      <workItem from="1576172265164" duration="27825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="217" y="107" width="1071" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576163162206">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state x="217" y="107" width="1071" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1375.876@65.24.1375.876" timestamp="1576163162206" />
+    <state x="481" y="228" key="FileChooserDialogImpl" timestamp="1576163516075">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state x="481" y="228" key="FileChooserDialogImpl/65.24.1375.876@65.24.1375.876" timestamp="1576163516075" />
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1576174572527">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom/65.24.1375.876@65.24.1375.876" timestamp="1576174572527" />
+    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1576174572527">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state width="1323" height="235" key="GridCell.Tab.0.center/65.24.1375.876@65.24.1375.876" timestamp="1576174572527" />
+    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1576174572527">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state width="1323" height="235" key="GridCell.Tab.0.left/65.24.1375.876@65.24.1375.876" timestamp="1576174572527" />
+    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1576174572527">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state width="1323" height="235" key="GridCell.Tab.0.right/65.24.1375.876@65.24.1375.876" timestamp="1576174572527" />
+    <state x="276" y="84" key="SettingsEditor" timestamp="1576172243223">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state x="276" y="84" key="SettingsEditor/65.24.1375.876@65.24.1375.876" timestamp="1576172243223" />
+    <state x="411" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576241917485">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state x="411" y="67" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/65.24.1375.876@65.24.1375.876" timestamp="1576241917485" />
+    <state x="364" y="24" width="776" height="876" key="find.popup" timestamp="1576241596485">
+      <screen x="65" y="24" width="1375" height="876" />
+    </state>
+    <state x="364" y="24" width="776" height="876" key="find.popup/65.24.1375.876@65.24.1375.876" timestamp="1576241596485" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ssd_pytorch$toPascalVocXml.coverage" NAME="toPascalVocXml Coverage Results" MODIFIED="1576171678183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ssd_pytorch$pytest_in_eval_test_set_py.coverage" NAME="pytest in eval_test_set.py Coverage Results" MODIFIED="1576174572511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
