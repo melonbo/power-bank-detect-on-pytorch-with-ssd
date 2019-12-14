@@ -1,4 +1,4 @@
-**forked from [kuangliu/pytorch-ssd]**(https://github.com/kuangliu/pytorch-ssd)
+forked from [kuangliu/pytorch-ssd](https://github.com/kuangliu/pytorch-ssd)
 
 ## 1、下载代码
 
