@@ -19,7 +19,7 @@ toPascalVocXml.py文件会将测试集转化为为PascalVoc格式，保存在当
 eval_test_set.py调用weights路径下的训练模型对测试集进行测试
 
 defalut下测试集保存在test目录下，运行测试指令测试结果过如下：
-'''
+```
 python eval_test_set.py --annotation_folder=./test/Annotations --image_folder=./test/JPEGImages --image_set_file=./test/image_set.txt
 ./test/Annotations
 ./test/JPEGImages
@@ -114,4 +114,4 @@ Results:
 --------------------------------------------------------------
 Results computed with the **unofficial** Python eval code.
 Results should be very close to the official MATLAB eval code.
-'''
+```
